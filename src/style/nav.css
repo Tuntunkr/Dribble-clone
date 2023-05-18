@@ -1,0 +1,331 @@
+header nav .container-fluid {
+  padding: 0 24px;
+}
+
+header .navbar {
+  padding: 0;
+}
+
+header nav .navbar-brand {
+  transition: var(--Ltrns);
+}
+header nav .navbar-brand:hover {
+  opacity: 0.6;
+}
+
+header nav .nav-link {
+  padding: 30px 16px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: var(--text-lite);
+  font-size: 14px;
+}
+
+header nav .nav-btn-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header nav .nav-btn-box :is(.signin-btn, .signin-btn:focus) {
+  border: none;
+  color: var(--text-lite);
+  padding-left: 0;
+  padding-right: 0;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 16px;
+}
+
+header nav .navbar-collapse .nav-mb-search {
+  display: none;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2 */
+@media (max-width: 992px) {
+  header nav .navbar-brand {
+    order: 2;
+    margin: 0;
+    margin-bottom: 14px;
+  }
+  header nav .navbar-toggler {
+    order: 1;
+    margin-left: 24px;
+    margin-bottom: 14px;
+  }
+  header nav .nav-btn-box {
+    order: 3;
+  }
+  header nav .navbar-collapse {
+    order: 4;
+    height: calc(100vh - 55px);
+  }
+
+  header nav .nav-btn-box .signin-btn {
+    margin-bottom: 14px;
+    margin-right: 24px;
+  }
+
+  header .navbar {
+    padding: 14px 0 0 0;
+  }
+
+  .d-m-none {
+    display: none;
+  }
+
+  header nav :is(.navbar-toggler, .navbar-toggler:focus) {
+    padding: 0;
+    padding-right: 60px;
+    border: none;
+    box-shadow: none;
+    color: var(--text-lite);
+  }
+
+  header nav .navbar-collapse.show {
+    border-top: 1px solid rgba(145, 144, 144, 0.167);
+  }
+
+  header nav .navbar-collapse .navbar-nav {
+    padding: 24px;
+  }
+
+  header nav .navbar-collapse .nav-mb-search {
+    display: block;
+    width: 100%;
+    padding: 24px;
+    padding-bottom: 0;
+  }
+  header nav .navbar-collapse .nav-mb-search div {
+    position: relative;
+  }
+  header nav .navbar-collapse .nav-mb-search div::after {
+    position: absolute;
+    content: url("../assests//magnifying-glass.svg");
+    width: 15px;
+    top: 53%;
+    transform: translateY(-50%);
+    left: 10px;
+  }
+  header nav .navbar-collapse .nav-mb-search input {
+    padding-left: 35px;
+  }
+
+  header nav .container-fluid {
+    padding: 0;
+  }
+
+  header nav .nav-link {
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 17px;
+  }
+}
+
+/* ==========> Dropdown CSS */
+header nav .dropdown-toggle::after {
+  display: none;
+}
+
+header nav .dropdown .dropdown-menu {
+  padding: 0;
+  overflow: hidden;
+}
+header nav .dropdown .custom-down {
+  box-shadow: rgba(125, 125, 125, 0.2) 0px 2px 8px 0px;
+}
+header nav .dropdown .c-width-A {
+  width: 650px;
+}
+header nav .dropdown .c-width-B {
+  width: 400px;
+}
+
+/* ==> Box 1  */
+header nav .dropdown .custom-down .box-1 {
+  padding: 40px;
+}
+
+header nav .dropdown .drop-ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header nav .dropdown .drop-ul li .nv-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+header nav .dropdown .drop-ul li:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+/*==>  Dropdown Icon Box */
+header nav .dropdown .drop-ul li .icon-bx {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+header nav .dropdown .drop-ul li .icon-bx span {
+  display: grid;
+  place-items: center;
+  background-color: var(--bg-dim);
+  border-radius: var(--border-r-primary);
+  width: 40px;
+  height: 40px;
+  transition: var(--Ltrns);
+}
+header nav .dropdown .drop-ul li .icon-bx span img {
+  width: 55%;
+}
+
+/* Coloring  */
+header nav .dropdown .drop-ul li:nth-child(1):hover .icon-bx span {
+  background-color: rgba(114, 78, 145, 0.1);
+}
+header nav .dropdown .drop-ul li:nth-child(2):hover .icon-bx span {
+  background-color: rgba(229, 79, 109, 0.1);
+}
+header nav .dropdown .drop-ul li:nth-child(3):hover .icon-bx span {
+  background-color: rgba(116, 196, 186, 0.1);
+}
+header nav .dropdown .drop-ul li:nth-child(4):hover .icon-bx span {
+  background-color: rgba(248, 198, 48, 0.1);
+}
+header nav .dropdown .drop-ul li:nth-child(5):hover .icon-bx span {
+  background-color: rgba(114, 78, 145, 0.1);
+}
+
+/* ==> dropdown title txt part  */
+header nav .dropdown .drop-ul li .naming {
+  flex-grow: 1;
+}
+header nav .dropdown .drop-ul li .naming h5 {
+  color: var(--text-Black);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  text-transform: capitalize;
+}
+header nav .dropdown .drop-ul li .naming h6 {
+  color: var(--text-lite);
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+/* ==> dropdown Arrow box  */
+header nav .dropdown .drop-ul li .arrow-div {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+header nav .dropdown .drop-ul li .arrow-div i {
+  opacity: 0;
+  transform: translateX(-5px);
+  font-size: 11x;
+  transition: var(--Ltrns);
+}
+header nav .dropdown .drop-ul li:hover .arrow-div i {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* arrow coloring */
+header nav .dropdown .drop-ul li:nth-child(1) .arrow-div i {
+  color: #724e91;
+}
+header nav .dropdown .drop-ul li:nth-child(2) .arrow-div i {
+  color: #e54f6d;
+}
+header nav .dropdown .drop-ul li:nth-child(3) .arrow-div i {
+  color: #74c4ba;
+}
+header nav .dropdown .drop-ul li:nth-child(4) .arrow-div i {
+  color: #f8c630;
+}
+header nav .dropdown .drop-ul li:nth-child(5) .arrow-div i {
+  color: #724e91;
+}
+
+/* ==> Box B  */
+header nav .dropdown .custom-down .box-2 {
+  padding: 30px;
+  background-color: var(--bg-dim);
+}
+
+header nav .dropdown .custom-down .box-2 ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header nav .dropdown .custom-down .box-2 ul li a {
+  padding: 10px 0;
+  font-size: 13px;
+  font-weight: 600;
+  display: block;
+  color: var(--text-lite);
+  text-transform: capitalize;
+  transition: var(--Ltrns);
+}
+header nav .dropdown .custom-down .box-2 ul li:hover a {
+  color: var(--text-Black);
+}
+
+@media (max-width: 992px) {
+  /* Nav Dropdown */
+  header nav .dropdown-toggle {
+    position: relative;
+  }
+  header nav .dropdown-toggle::after {
+    display: inline-block;
+    position: absolute;
+    content: url("../assests/angle-down-01.svg");
+    margin-left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    border: none;
+  }
+
+  header nav .dropdown .custom-down {
+    box-shadow: none;
+    border: none;
+    border-left: 1px solid rgba(170, 169, 169, 0.218);
+    background-color: transparent;
+    border-radius: 0;
+  }
+
+  /* ==> Box A  */
+  header nav .dropdown .custom-down .box-1 {
+    padding: 10px 20px;
+  }
+
+  /*==>  Dropdown Icon Box */
+  header nav .dropdown .drop-ul li .icon-bx {
+    display: none;
+  }
+
+  /* ==> dropdown title txt part  */
+  header nav .dropdown .drop-ul li .naming h5 {
+    margin-bottom: 0;
+    color: var(--text-lite);
+    font-weight: 500;
+  }
+  header nav .dropdown .drop-ul li .naming h6 {
+    display: none;
+  }
+
+  /* ==> dropdown Arrow box  */
+  header nav .dropdown .drop-ul li .arrow-div {
+    display: none;
+  }
+
+  /* ==> Box B  */
+  header nav .dropdown .custom-down .box-2 {
+    display: none;
+  }
+}

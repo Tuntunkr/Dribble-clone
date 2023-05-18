@@ -1,0 +1,136 @@
+/*******************************
+            PRELOADER  
+********************************/
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  z-index: 99999;
+  display: grid;
+  place-items: center;
+}
+
+/*******************************
+              BACK TO TOP  
+  ********************************/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10%;
+  right: 1%;
+  z-index: 10;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: var(--secoundry);
+  color: white;
+  transition: all 0.9s ease;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#myBtn:hover {
+  background-color: var(--primary);
+}
+
+#myBtn span {
+  color: var(--FullWhite);
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+#myBtn:hover span {
+  transform: translateY(-3px);
+  text-decoration: none;
+  color: var(--FullWhite);
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  #myBtn {
+    width: 35px;
+    height: 35px;
+    font-size: 10px;
+    bottom: 8%;
+    right: 4%;
+  }
+}
+
+/*******************************
+                 BUTTON  
+    ********************************/
+/* ++++++ 🔘 Big Btn  +++++++++ */
+.my-btn {
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: var(--border-r-primary);
+  outline: none;
+}
+
+/* ++++ ⏹️ Primary  */
+.btn-prim {
+  padding: 10px 16px;
+  background-color: var(--primary);
+  color: white;
+  transition: var(--Ltrns);
+}
+.btn-prim:hover {
+  background-color: var(--primary);
+  color: white;
+  opacity: 0.6;
+}
+
+/* ++++ ⏹️ Primary Wide  */
+.btn-prim-w {
+  padding: 10px 60px;
+  background-color: var(--primary);
+  color: white;
+  transition: var(--Ltrns);
+}
+.btn-prim-w:hover {
+  background-color: var(--primary);
+  color: white;
+  opacity: 0.6;
+}
+
+/* ++++ ⏹️ Btn fade wide  */
+.btn-fade-w {
+  padding: 10px 60px;
+  background-color: transparent;
+  color: var(--primary);
+  font-weight: 500;
+  transition: var(--Ltrns);
+}
+.btn-fade-w:hover {
+  background-color: transparent;
+  color: var(--primary);
+  opacity: 0.7;
+}
+
+@media (max-width: 800px) {
+  .my-btn {
+    font-size: 12px;
+    padding: 12px 25px;
+  }
+}
+
+/* ****************************
+           Social Icons
+  ******************************* */
+.social-icons-div {
+  display: flex;
+  gap: 15px;
+}
+.social-icons-div a {
+  font-size: 18px;
+  color: var(--text-Black);
+  flex-shrink: 0;
+  transition: var(--Ltrns);
+}
+.social-icons-div a:hover {
+  color: #060611;
+}
